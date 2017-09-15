@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Amigo\nInvisible</string>
+	<string name="action_settings">Settings</string>
+    <string name="descripcion"> 
+        El amigo invisible es un juego popular en el cúal un grupo de personas 
+        (amigos, compañeros de trabajo, etc.) participan en un intercambio secreto de regalos.
+        La aplicación se encargará de pedir al organizador los datos del evento y de los participantes
+        y realizará la asignación del sorteo para la entrega de regalos.
+        \nLas normas serán:
+        \n\t->Cada participante hará un regalo y recibirá otro, debiendo mantener siempre en
+        secreto tanto su identidad como la de su destinatario.
+        \n\t->Número mínimo de participantes(tres personas), pudiendo realizar exclusiones entre ellas.
+        \n\t->Será obligatorio introducir el e-mail de los participantes para realizar el sorteo de la
+        manera más secreta posible, ya que los resultados no se mostrarán por pantalla.
+		\n\t->Temática del regalo(si la hubiese).
+		\n\nRealiza ya tu propio evento con esta simple aplicación y, ¡disfruta de unas risas con los amigos!
+		\n\nDesarrollador: Quintín Sanabria Sánchez Versión 1.0
+	</string>
+    <string name="descrip">Descripción:</string>
+    <string name="nuevo_evento">Nuevo Evento</string>
+    <string name="nombre_evento">Nombre del evento:</string>
+    <string name="lugar_evento">Lugar del evento:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="hora">Hora:</string>
+    <string name="tematica">Temática del regalo(opc.):</string>
+    <string name="precio_min">Precio mín.(opc.):</string>
+    <string name="precio_max">Precio máx.(opc.):</string>
+    <string name="numero_grupos">Grupos(0):</string>
+    <string name="grupo_seleccionado">Grupo Seleccionado:</string>
+    <string name="nombre_grupo">Nombre del grupo:</string>
+    <string name="participantes">Participantes(0):</string>
+    <string name="nuevo_participante">Nuevo participante:</string>
+    <string name="nombre_participante">Nombre:</string>
+    <string name="email_participante">E-mail:</string>
+    <string name="telefono_participante">Teléfono:</string>
+    <string name="exclusiones">Exclusiones:</string>
+    <string name="no_exclusiones">No realizar exclusiones</string>
+    <string name="si_exclusiones">Realizar exclusiones</string>
+    <string name="no_puede_regalar">No puede regalar a:</string>
+    <string name="ambos_sentidos">Aplicar en ambos sentidos</string>
+    <string name="info_exclusiones">Aquí se realizará la selección de las distintas exclusiones entre 
+        los participantes del grupo(parejas en el grupo, no repetir participantes que regalaron 
+        el año anterior, etc.) si no las hubiese se marcaría la casilla *No realizar exclusiones*.
+        Si vuelve hacia atrás perderá los datos de las exclusiones ya realizadas.</string>
+    <string name="anadir">Añadir</string>
+    <string name="ver">Ver</string>
+    <string name="datos_finales">Descripción del evento:</string>
+    <string name="tv_evento">Evento</string>
+    <string name="se_celebrara">Se celebrará en:</string>
+    <string name="tv_lugar">Lugar</string>
+    <string name="el_dia">El día:</string>
+    <string name="tv_fecha">Fecha</string>
+    <string name="a_las">A las:</string>
+    <string name="tv_hora">Hora</string>
+    <string name="ver_tematica">Temática:</string>
+    <string name="tv_ver_tematica">Temática</string>
+    <string name="intervalo_precios">Valor regalo:</string>
+    <string name="tv_precios">Precios</string>
+    <string name="sorteo_movil">¿Desea enviar los datos del sorteo a través del móvil? 
+        Todos los participantes que tengan un número de móvil asociado recibirán el resultado también en su smartphone.
+        \nrevuerde que los resultados del sorteo, debido a la máxima confidencialidad, serán enviados a través de e-mail y opcionalmente 
+        a través de SMS, por lo que debería conectarse a una red wifi si no tiene tarifa de datos
+        y cancelar el envío por mensaje de texto si no posee mensajes gratuitos.</string>
+	
+</resources>

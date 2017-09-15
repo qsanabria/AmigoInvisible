@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_datos_finales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/fondo" >
+
+    <Button
+        android:id="@+id/b_modificar_datos"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/select_modificar_datos"
+        android:onClick="atras" />
+
+    <Button
+        android:id="@+id/b_generar_sorteo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/select_generar_sorteo"
+        android:onClick="generar_sorteo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/datos_finales"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/tv_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_evento"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFAA" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_evento"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/se_celebrara"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/tv_lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/tv_lugar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/tv_ver_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="@string/tv_fecha"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_ver_fecha"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tv_ver_hora"
+        android:text="@string/a_las"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_lugar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/el_dia"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/tv_ver_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/tv_hora"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ver_fecha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/ver_tematica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/tv_ver_tematica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_ver_tematica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/tv_ver_tematica"
+        android:layout_marginTop="10dp"
+        android:text="@string/intervalo_precios"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/tv_precios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="@string/tv_precios"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/tv_ver_participantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/participantes"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <ListView
+        android:id="@+id/lv_ver_participantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_modificar_datos"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_ver_participantes"
+        android:cacheColorHint="@color/color_fondo" >
+
+    </ListView>
+
+</RelativeLayout>

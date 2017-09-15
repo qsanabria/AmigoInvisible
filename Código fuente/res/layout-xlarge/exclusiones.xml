@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_exclusiones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo" >
+
+    <TextView
+        android:id="@+id/tv_exclusiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exclusiones"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/naranja" />
+
+    <Button
+        android:id="@+id/b_info_exclusiones"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_exclusiones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/b_atras_exclusiones"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/select_atras"
+        android:onClick="atras" />
+
+    <Button
+        android:id="@+id/b_siguiente_exclusiones"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/select_siguiente"
+        android:onClick="siguiente_exclusiones" />
+
+    <CheckBox
+        android:id="@+id/cb_no_exclusiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_info_exclusiones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:checked="true"
+        android:onClick="click_no"
+        android:text="@string/no_exclusiones"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
+
+    <CheckBox
+        android:id="@+id/cb_si_exclusiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_no_exclusiones"
+        android:layout_below="@+id/cb_no_exclusiones"
+        android:layout_marginTop="50dp"
+        android:onClick="click_si"
+        android:text="@string/si_exclusiones"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_si_exclusiones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_no_puede_regalar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/no_puede_regalar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_no_puede_regalar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/cb_ambos_sentidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/ambos_sentidos"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
+
+    <Button
+        android:id="@+id/b_ver_exclusiones"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_anadir_exclusion"
+        android:layout_alignBottom="@+id/b_anadir_exclusion"
+        android:layout_alignLeft="@+id/b_siguiente_exclusiones"
+        android:onClick="ver_exclusiones"
+        android:text="@string/ver" />
+
+    <Button
+        android:id="@+id/b_anadir_exclusion"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b_atras_exclusiones"
+        android:layout_below="@+id/cb_ambos_sentidos"
+        android:layout_marginTop="80dp"
+        android:onClick="anadir_exclusion"
+        android:text="@string/anadir" />
+
+</RelativeLayout>

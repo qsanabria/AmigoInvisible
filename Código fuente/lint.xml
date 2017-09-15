@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CommitPrefEdits" severity="ignore" />
+    <issue id="DrawAllocation" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src\com\example\amigo_invisible\clases_ayuda\Evento_agenda.java" />
+    </issue>
+    <issue id="ViewConstructor" severity="ignore" />
+</lint>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_inicio"
+    android:background="@drawable/fondo_p_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio" >
+
+    <Button
+        android:id="@+id/b_nuevo_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/select_nuevo_grupo"
+        android:onClick="nuevo_evento" />
+
+    <Button
+        android:id="@+id/b_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b_nuevo_grupo"
+        android:layout_below="@+id/b_nuevo_grupo"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/select_ayuda"
+        android:onClick="ayuda" />
+
+    <Button
+        android:id="@+id/b_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b_ayuda"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/select_salir"
+        android:onClick="salir" />
+
+</RelativeLayout>

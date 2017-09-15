@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_nuevo_participante"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_small" >
+
+    <TextView
+        android:id="@+id/tv_nuevo_participante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nuevo_participante"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <TextView
+        android:id="@+id/tv_nombre_participante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_nuevo_participante"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/nombre_participante"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_nombre_participante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_nombre_participante"
+        android:layout_alignBottom="@+id/tv_nombre_participante"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/tv_nombre_participante"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_email_participante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_nombre_participante"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/email_participante"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_email_participante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_email_participante"
+        android:layout_alignBottom="@+id/tv_email_participante"
+        android:layout_alignLeft="@+id/et_nombre_participante"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_telefono_participante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_email_participante"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/telefono_participante"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_numero_participante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_telefono_participante"
+        android:layout_alignBottom="@+id/tv_telefono_participante"
+        android:layout_alignLeft="@+id/et_email_participante"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/b_atras_nuevo_participante"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/select_atras"
+        android:onClick="atras" />
+
+    <Button
+        android:id="@+id/b_agregar_nuevo_participante"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/select_agregar"
+        android:onClick="agregar" />
+
+    <Button
+        android:id="@+id/b_desde_agenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_atras_nuevo_participante"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/select_desde_agenda"
+        android:onClick="desde_agenda" />
+
+</RelativeLayout>

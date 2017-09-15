@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_nuevo_grupo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_small" >
+
+    <TextView
+        android:id="@+id/tv_nombre_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nombre_grupo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/naranja" />
+
+    <EditText
+        android:id="@+id/et_nombre_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nombre_grupo"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <Button
+        android:id="@+id/b_atras_nuevo_grupo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/select_atras"
+        android:onClick="atras" />
+
+    <Button
+        android:id="@+id/b_anadir_nuevo_grupo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/select_anadir"
+        android:onClick="crear_grupo" />
+
+    <Button
+        android:id="@+id/b_nuevo_participante"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@+id/b_limpiar_lista"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/select_nuevo_participante"
+        android:onClick="nuevo_participante" />
+
+    <ListView
+        android:id="@+id/lv_participantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_nuevo_participante"
+        android:layout_below="@+id/tv_participantes"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="@color/color_fondo" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/b_limpiar_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@+id/b_atras_nuevo_grupo"
+        android:layout_alignLeft="@+id/b_nuevo_participante"
+        android:layout_alignRight="@+id/b_nuevo_participante"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/select_limpiar_lista"
+        android:onClick="limpiar" />
+
+    <TextView
+        android:id="@+id/tv_participantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_nombre_grupo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/participantes"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blanco" />
+
+</RelativeLayout>

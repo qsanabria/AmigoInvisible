@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_nuevo_evento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo" >
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nuevo_evento"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/naranja" />
+
+    <Button
+        android:id="@+id/b_atras_n_evento"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/select_atras"
+        android:onClick="atras" />
+
+    <Button
+        android:id="@+id/b_siguiente_n_evento"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/select_siguiente"
+        android:onClick="creacion_evento" />
+
+    <TextView
+        android:id="@+id/tv_nombre_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_titulo"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/nombre_evento"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_nombre_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_nombre_evento"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_lugar_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_nombre_evento"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/lugar_evento"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_lugar_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_lugar_evento"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_lugar_evento"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/fecha"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/b_atras_n_evento"
+        android:layout_below="@+id/tv_fecha"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_fecha"
+        android:layout_alignLeft="@+id/b_siguiente_n_evento"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/hora"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_fecha"
+        android:layout_alignBottom="@+id/et_fecha"
+        android:layout_alignLeft="@+id/b_siguiente_n_evento"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_tematica_regalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_fecha"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/tematica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_tematica_regalo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_tematica_regalo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_precio_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_precio_min"
+        android:layout_alignLeft="@+id/b_siguiente_n_evento"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_precio_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_tematica_regalo"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/precio_min"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:id="@+id/tv_precio_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_precio_max"
+        android:layout_below="@+id/et_tematica_regalo"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/precio_max"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_precio_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_precio_min"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

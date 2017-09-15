@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_numero_grupos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo" >
+
+    <TextView
+        android:id="@+id/tv_numero_grupos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/numero_grupos"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/naranja" />
+
+    <Button
+        android:id="@+id/b_crear_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/select_crear_grupo"
+        android:onClick="crear_grupo" />
+
+    <TextView
+        android:id="@+id/tv_grupo_seleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_crear_grupo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/grupo_seleccionado"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanco" />
+
+    <ListView
+        android:id="@+id/lv_grupos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_crear_grupo"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_numero_grupos"
+        android:cacheColorHint="@color/color_fondo" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/et_grupo_seleccionado"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_grupo_seleccionado"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:inputType="none"
+        android:textColor="@color/negro" />
+
+    <Button
+        android:id="@+id/b_atras_numero_grupos"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/select_atras"
+        android:onClick="atras" />
+
+    <Button
+        android:id="@+id/b_siguiente_numero_grupos"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/select_siguiente"
+        android:onClick="hacia_exclusiones" />
+
+</RelativeLayout>
